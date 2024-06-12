@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+
+%----------------------------------
+%% Document Settings
+\pagestyle{empty} % No page numbers
+\setmainfont{Times New Roman} % Font
+
+%----------------------------------
+%% Functions
+% Title
+\renewcommand{\title}
+{
+	\noindent {\LARGE My Title} \\[1mm]
+  {\normalsize A Sub Title} \\
+  {\small R. Nate Crummett, \today} \\
+  \noindent \makebox[\linewidth]{\rule{\textwidth}{0.8pt}} \\ % horizontal line across page
+}
+
+% Section title command
+\newcommand{\sectiontitle}[1]{ \noindent {\large #1} \\[-4mm] }
+
+%----------------------------------
+%% Document
+\begin{document}
+  \title \\ [-1mm]  
+  \sectiontitle{Section Title}
+
+  \indent Hello world! This is my first sentence.
+\end{document}
