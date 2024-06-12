@@ -13,8 +13,8 @@ then
         mv $oldname $newname
         echo File renamed successfully.
 
-        # Clean the current directory
         rm rename-windows.bat
+        # Clean the current directory
         rm -- "$0"
 else
         echo The file does not exist.

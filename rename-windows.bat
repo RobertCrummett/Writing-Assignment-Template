@@ -12,6 +12,7 @@ if exist %oldname% (
 	ren %oldname% %newname%
 	echo File renamed successfully.
 	
+        del rename-linux.sh
        	REM This command will delete the current .bat file
 	REM A clean up procedure	
 	(goto) 2>nul & del "%~f0"
